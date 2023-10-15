@@ -6,7 +6,7 @@ namespace Test
         public void ChekingCompression()
         {
             var chek = new Rle();
-            var input = "DDDDHHHHkHK";
+            var input = "something: DDDDHHHHkHK";
             var example = chek.Compression(input);
 
             Assert.That(example, Is.Not.EqualTo("4D,5H,1k,1K"));
